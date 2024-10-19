@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .rating, .recommendation {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <h1>We Value Your Feedback</h1>
+
+    <!-- Feedback Form -->
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <br>
+
+        <!-- Comments/Feedback Field -->
+        <label for="comments">Your Feedback:</label>
+        <br>
+        <textarea id="comments" name="comments" rows="5" placeholder="Your feedback or comments" required></textarea>
+        <br>
+
+        <!-- Rating System -->
+        <label>Rate Our Service:</label>
+        <br>
+        <div class="rating">
+            <input type="radio" id="1star" name="rating" value="1">
+            <label for="1star">1 Star</label>
+            <br>
+            <input type="radio" id="2star" name="rating" value="2">
+            <label for="2star">2 Stars</label>
+            <br>
+            <input type="radio" id="3star" name="rating" value="3">
+            <label for="3star">3 Stars</label>
+            <br>
+            <input type="radio" id="4star" name="rating" value="4">
+            <label for="4star">4 Stars</label>
+            <br>
+            <input type="radio" id="5star" name="rating" value="5">
+            <label for="5star">5 Stars</label>
+        </div>
+
+        <!-- Recommendation Checkbox -->
+        <label>Would you recommend us to others?</label>
+        <br>
+        <div class="recommendation">
+            <input type="checkbox" id="recommend" name="recommend" value="yes">
+            <label for="recommend">Yes</label>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Feedback">
+    </form>
+
+</body>
+</html>
